@@ -1,13 +1,10 @@
 require "pry"
 
-romanNumsHsh = {:I => 1,:V => 5,:X => 10,:L => 50,:C => 100,:D => 500,:M => 1000}
-
 $romanLetsArr = ["I","V","X","L","C","D","M"]
 $romanNumsArr = [1,5,10,50,100,500,1000]
 
 def roman(num)
-
-	i = 6
+	i = 6 # alternatively array.length
 	romanStr = ""
 	while i >= 0
 		if num >= $romanNumsArr[i]
@@ -21,7 +18,8 @@ def roman(num)
 end
 
 roman(1000)
-
 roman(500)
-
 roman(200)
+roman(25)
+roman(2)
+roman(15)
